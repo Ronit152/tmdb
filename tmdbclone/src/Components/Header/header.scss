@@ -1,0 +1,108 @@
+@import '../../styles/colors.scss';
+@import '../../styles/main.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.header {
+ @extend %flex_spaceb; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $bg;
+  height: 64px;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.2s linear;
+  margin: 0 auto;
+  padding: 0 6.2rem;
+
+  .left-header {
+        @extend %flex_center;
+
+    div.logo {
+      display: block;
+      margin-right: 16px;
+      height: 20px;
+      width: 154px;
+    }
+      ul.nav-menu {
+        display: flex;
+        position: relative;
+
+        li {
+            display: flex;
+          margin-right: 14px;
+
+          a {
+            padding: 0.5rem;
+            cursor: pointer;
+            color: $primary;
+            font-weight: 600;
+            text-decoration: none;
+          }
+        }
+      
+    }
+  }
+  .right-header {
+    display: flex;
+
+    align-items: center;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;  
+
+      li:first-child {
+        margin: 0;
+      }
+
+      li {
+        margin-left: 30px;
+
+        a {
+          color: $primary;
+          font-weight: 600;
+          text-decoration: none;
+
+          img {
+            display: block;
+            height: 23px;
+            width: 23px;
+          }
+
+          img.search-icon {
+            display: block;
+            height: 29px;
+            width: 29px;
+          }
+        }
+
+        div.trans-language {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #fff;
+          border-radius: 3px;
+          padding: 3px 5px;
+          color: $primary;
+          font-size: 0.9em;
+          width: 28px;
+          height: 26px;
+            
+          &:hover {
+            background: $primary;
+            color: $secondary;
+          }
+        }
+      }
+    }
+}
+}

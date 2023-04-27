@@ -1,0 +1,31 @@
+%flex {
+    display: flex;
+}
+
+%flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex_spaceb {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex_around {
+    display: flex;
+    justify-content: space-around;
+}
+
+%flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
