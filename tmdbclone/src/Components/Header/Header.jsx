@@ -9,21 +9,69 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="left-header">
-        <div to="/" className="logo">
+        <Link to="/" className="logo">
           <img src={logo} alt="The Movie Database(TMDB)" />
-        </div>
+        </Link>
         <ul className="nav-menu">
           <li className="dropdown-movies">
             <a href="#">Movies</a>
+            <div className="dropdown-menu">
+              <Link className="option" to="/movie" >
+                Popular
+              </Link>
+              <Link className="option" to="/movie/now-playing" >
+                Now Playing
+              </Link>
+              <Link className="option" to="movie/upcoming">
+                Upcoming
+              </Link>
+              <Link className="option" to="movie/top-rated">
+                Top Rated
+              </Link>
+            </div>
           </li>
-          <li className="dropdown-tvshow">
+          <li className="dropdown-movies">
             <a href="#">TV Shows</a>
+            <div className="dropdown-menu">
+              <Link to="/tv" className="option">
+                Popular
+              </Link>
+              <Link to="/tv/airing-today" className="option">
+                Airing Today
+              </Link>
+              <Link to="/tv/on-tv" className="option">
+                On TV
+              </Link>
+              <Link to="/tv/top-rated" className="option">
+                Top Rated
+              </Link>
+            </div>
           </li>
-          <li>
+          <li className="dropdown-movies">
             <a href="#">People</a>
+            <div className="dropdown-menu">
+              <Link className="option" to="" >
+                Popular
+              </Link>
+              
+            </div>
           </li>
-          <li>
+          <li className="dropdown-movies">
             <a href="#">More</a>
+            <div className="dropdown-menu">
+              <Link className="option" to="" >
+                Popular
+              </Link>
+              <Link className="option" to="/movie/now-playing" >
+                Now Playing
+              </Link>
+              <Link className="option" to="movie/upcoming">
+                Upcoming
+              </Link>
+              <Link className="option" to="movie/top-rated">
+                Top Rated
+              </Link>
+            </div>
           </li>
         </ul>
       </div>

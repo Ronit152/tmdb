@@ -1,0 +1,105 @@
+@import '../../styles/colors.scss';
+@import '../../styles/main.scss';
+
+
+.container {
+    max-width: 1300px;
+    margin: 4rem auto 0 auto;
+    width: 100%;
+    color: #000;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+
+  }
+  section{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .container_wrap {
+        min-height: 300px;
+    height: calc(100vh / 2.5);
+    max-height: 360px;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(3, 37, 62, 0.8) 0%,
+        rgba(3, 37, 62, 0) 100%
+      ),
+      url("../../images/bg.jpg");
+    background-position: center;
+
+    background-size: cover;
+  }
+  
+  .title {
+    padding: 30px 40px;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    color: $primary;
+    padding-bottom: 0;
+  
+    h2 {
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 1;
+    }
+    h3 {
+      font-size: 2em;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+  
+  .search {
+    padding: 30px 40px;
+    padding-top: 14px;
+    padding-bottom: 3.8rem;
+    form {
+      display: flex;
+      position: relative;
+      margin-top: 30px;
+  
+      .search_input {
+        height: 46px;
+        width: 100%;
+        line-height: 46px;
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        outline: none;
+      }
+      .submit_input {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 46px;
+        border: none;
+        padding: 10px 28px;
+        background: linear-gradient(
+          to right,
+          rgba(rgba(30, 213, 169), 1) 0%,
+          rgba(rgba(1, 180, 228), 1) 100%
+        );
+        color: $primary;
+        border-radius: 30px;
+        font-weight: 700;
+        cursor: pointer;
+        right: 0;
+        font-size: 1.1em;
+  
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+  

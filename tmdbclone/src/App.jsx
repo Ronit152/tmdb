@@ -1,5 +1,6 @@
-
+import { BrowserRouter } from 'react-router-dom'
 import './App.css';
+import { MainContainer } from './Components/Container/MainContainer';
 import { Footer } from './Components/Footer/Footer';
 
 import { Header } from './Components/Header/Header';
@@ -7,14 +8,12 @@ import { Header } from './Components/Header/Header';
 function App() {
   return (
     <>
+    <BrowserRouter>
+
     <Header/>
-    <div>as</div>
-    <div>asd</div>
-    <div>asd</div>
-    <div>asd</div>
-    <div>asd</div>
-    <div>asd</div>
+    <MainContainer/>
     <Footer/>
+      </BrowserRouter>
     </>
   );
 }

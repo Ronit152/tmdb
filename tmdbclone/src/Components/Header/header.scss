@@ -19,12 +19,12 @@
   z-index: 10;
   transition: top 0.2s linear;
   margin: 0 auto;
-  padding: 0 6.2rem;
+  padding: 0 20.2rem;
 
   .left-header {
         @extend %flex_center;
 
-    div.logo {
+    .logo {
       display: block;
       margin-right: 16px;
       height: 20px;
@@ -44,10 +44,19 @@
             color: $primary;
             font-weight: 600;
             text-decoration: none;
+
+            
+          }
+          .option {
+            color: #212529 ;
+            display: block;
+            padding: 4px 85px 7px 16px ;
+            font-weight: 500 ;
+            white-space: nowrap ;
+            border-radius: inherit ;
           }
         }
-      
-    }
+      }
   }
   .right-header {
     display: flex;
@@ -106,3 +115,37 @@
     }
 }
 }
+.dropdown-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: $primary;
+  border-radius: 4px ;
+
+  display: none;
+  padding: 0.5rem 0;
+  width: 173.078px;
+  height: 120px;
+  overflow: visible;
+  z-index: 10002;
+  top: 40px;
+  left: 0px;
+  box-sizing: content-box;
+
+}
+
+
+.dropdown-movies:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-movies,
+.dropdown-tvshow {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu a:hover{
+  background-color: #f8f9fa;
+}
+
